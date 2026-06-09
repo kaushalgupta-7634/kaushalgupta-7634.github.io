@@ -304,13 +304,13 @@ footer a:hover{color:#fff}
         <div class="contact-item"><i class="ti ti-brand-linkedin"></i><a href="https://linkedin.com/in/kaushal-gupta-21b952346" target="_blank">linkedin.com/in/kaushal-gupta-21b952346</a></div>
         <div class="contact-item"><i class="ti ti-brand-github"></i><a href="https://github.com/kaushalgupta-7634" target="_blank">github.com/kaushalgupta-7634</a></div>
       </div>
-      <div class="contact-form">
-        <input type="text" placeholder="Your Name" />
-        <input type="email" placeholder="Your Email" />
-        <input type="text" placeholder="Subject" />
-        <textarea placeholder="Your Message..."></textarea>
-        <button type="button" onclick="this.textContent='Message Sent \u2713';this.style.background='#27a163'">Send Message</button>
-      </div>
+      <form class="contact-form" action="https://formspree.io/f/xgobylol" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea name="message" placeholder="Your Message..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
   </div>
 </section>
